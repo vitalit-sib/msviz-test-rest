@@ -1,0 +1,29 @@
+{
+  "name": "msviz-test-rest",
+  "version": "0.0.1",
+  "description": "test REST API for the the msviz backend server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vitalit-sib/msviz-test-rest.git"
+  },
+  "keywords": [
+    "test",
+    "json",
+    "rest",
+    "msViz"
+  ],
+  "author": "Alexandre Masselot <alexandre.masselot@gmail.com> (http://alexandre-masselot.blogspot.ch/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vitalit-sib/msviz-test-rest/issues"
+  },
+  "homepage": "https://github.com/vitalit-sib/msviz-test-rest",
+  "dependencies": {
+    "frisby": "^0.8.5",
+    "jasmine-node": "^1.14.5"
+  }
+}
