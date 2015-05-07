@@ -1,7 +1,7 @@
 # msviz backend REST API testing
 
-Launches a series of integration test on the REST API. We use node.js and the [frisby](http://frisbyjs.com/docs/api/) framework, executing all ``src/spec/api/*_spec.js``` files.
-It populates mongodb with temporary data from the ```resources/``` directory
+Launches a series of integration test on the REST API. We use node.js and the [frisby](http://frisbyjs.com/docs/api/) framework, executing all ```src/spec/api/*_spec.js``` files.
+It populates mongodb with temporary data from the ```resources/`` directory
 
 ## Launch the test
 
