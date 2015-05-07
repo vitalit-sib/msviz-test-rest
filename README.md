@@ -7,6 +7,6 @@ It populates mongodb with temporary data from the resources/ directory
 
      node_modules/jasmine-node/bin/jasmine-node src/spec/api/ --junitreport
      
- Or specifiy a bakend url via
+ The default backend url is http://localhost:9000 but it can be specified via:
  
      export URL_MSVIZ_SERVER=http://msviz.vital-it.ch/backend
