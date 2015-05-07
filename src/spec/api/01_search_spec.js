@@ -8,15 +8,19 @@ frisby.create('search list and check for the loaded mzId presence')
     .get(restTest.url('/search'))
     .expectStatus(200)
     .expectHeaderContains('content-type', 'application/json')
-    .expectJSON('', {
-        'searchIds': function (val) {
-            expect(val).toContain(searchId_1);
-        }
+    .expectJSON('?', {
+        'searchId': searchId_1
+    }
+)
+    .expectJSONTypes('0', {
+        searchId: String,
+        title: String,
+        database: Array,
+        username: String
     })
-    .expectJSONTypes('', {searchIds: Array})
     .toss();
 
-frisby.create('get search info')
+frisby.create('get one search info')
     .get(restTest.url('/search/' + searchId_1))
     .expectStatus(200)
     .expectHeaderContains('content-type', 'application/json')
@@ -37,3 +41,5 @@ frisby.create('delete mzid')
     .delete(restTest.url('/search/' + searchId_1))
     .expectStatus(200)
     .toss();
+
+setupUtils.deleteAll();

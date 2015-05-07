@@ -15,3 +15,5 @@ frisby.create('modification list for one search')
         "Carbamidomethyl": 3
     })
     .toss();
+
+setupUtils.deleteAll();
