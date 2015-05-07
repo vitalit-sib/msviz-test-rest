@@ -1,11 +1,10 @@
 /**
  * common call for the rest tests
- * @todo rootUrl shall bedefined via environment variable (let's pick the same as for the perl mirror scripts)
  * @constructor
  */
 var RestTest = function () {
     var _this = this;
-    _this.rootUrl = 'http://localhost:9000';
+    _this.rootUrl = process.env.URL_MSVIZ_SERVER || 'http://localhost:9000';
 };
 
 /**
