@@ -47,11 +47,12 @@ SetupUtils.prototype.deleteAll = function (localFile) {
 
 
     _.each(_this.ids.search, function (searchId) {
+        console.log('deleting ', searchId);
         frisby.create('delete mzid')
             .delete(restTest.url('/search/' + searchId))
             .toss();
     });
-    _this.ids.search.lenght = 0;
+    _this.ids.search.length = 0;
 };
 
 
