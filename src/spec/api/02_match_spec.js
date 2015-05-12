@@ -23,7 +23,7 @@ frisby.create('modification list for one search')
     .toss();
 
 
-frisby.create('check correct proteRef Assignation ACTA_MOUSE (bug #22)')
+frisby.create('check correct proteRef Assignation for LWDVR @ APAF_MOUSE (bug #22)')
     .get(restTest.url('/match/psms/' + searchId_F001303 + '/by-ac/APAF_MOUSE'))
     .expectStatus(200)
     .expectHeaderContains('content-type', 'application/json')
